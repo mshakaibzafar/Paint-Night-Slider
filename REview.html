@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slider Paint Night</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script type="text/javascript">
+ $(document).ready(function(){
+      $('.items').slick({
+        dots: true,
+        infinite: true,
+        speed: 800,
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+
+        ]
+      });
+    });
+  </script>
+</head>
+<style>
+@media only screen and (max-width: 767px) {
+button.slick-prev.slick-arrow:after {
+    left: 15px !important;
+    top: -65px !important;
+}
+button.slick-next.slick-arrow:after {
+    left: -45px !important;
+    top: -65px !important;
+}
+img.iamg-main {
+    margin-left: 0px !important;
+}
+p.iamg-main {
+    text-align: center;
+}
+p.over-all {
+    text-align: center;
+}
+}
+.lead{
+  font-size:16.px;
+}
+.card {
+border: 0;
+margin: 10px;
+outline: none;
+cursor: pointer;
+}
+
+.slick-dots li button:before{
+  color:#fff!important;
+  font-size: 18px;
+}
+.card-body h3{
+  color:#fdf8f4;
+  align-item:left;
+  font-weght:600;
+  margin:40px 0px 0px 0px;
+ 
+}
+.cust_card_btn_div{
+  margin:0px 0px 50px;
+ 
+}
+.cust_card_btn{
+  color:#fff;
+  Background:#991B1E
+;
+  padding:16px 40px;
+  position:absolute;
+  right:0px;
+}
+.card-body span{
+  background:#991B1E;
+  border-radius:4px;
+  padding:10px 15px;
+color:#fff;
+  position:relative;
+  float:right;
+  margin-bottom:50px;
+ 
+}
+ body {
+background: #000;  /* fallback for old browsers */
+
+font-family: 'Roboto', sans-serif;
+letter-spacing: 0.5px;
+}
+.lead{
+  font-size:16.px;
+}
+.card {
+border: 0;
+margin: 10px;
+outline: none;
+cursor: pointer;
+}
+
+.slick-dots li button:before{
+  color:#fff!important;
+  font-size: 18px;
+}
+.card-body h3{
+  color:#000;
+  align-item:left;
+  font-weght:600;
+  margin:40px 0px 0px 0px;
+ 
+}
+.cust_card_btn_div{
+  margin:0px 0px 50px;
+ 
+}
+.cust_card_btn{
+  color:#fff;
+  Background:#991B1E
+;
+  padding:16px 40px;
+  position:absolute;
+  right:0px;
+}
+.card-body span{
+  background:#991B1E;
+  border-radius:4px;
+  padding:10px 15px;
+color:#fff;
+  position:relative;
+  float:right;
+  margin-bottom:50px;
+ 
+}
+.main-review {
+    max-width: 1200px !important;
+}
+body {
+    background-color: #fdf8f4 !important;
+    font-family: 'DM Sans',sans-serif !important;
+    color: #3b4555 !important;
+    line-height: 170% !important;
+    font-weight: 400 !important;
+}
+.iner-review-row {
+    display: flex;
+}
+.fisrt-small-sec img {
+    width: 255px;
+}
+.iner-review-row span {
+    font-size: 48px;
+    color: #0c1d37;
+    line-height: 117%;
+    font-weight: 700 !important;
+    letter-spacing: -.7px;
+}
+.iner-review-row p {
+    margin-left: 20px;
+    color: #000;
+    line-height: 30px;
+    text-align: left;
+    font-size: 18px !important;
+}
+.iner-review-row .col-lg-8 {
+    padding-left: 0px !important;
+}
+.iner-review-row .col-lg-4 {
+    padding-right: 0px !important;
+    text-align: right;
+}
+.container.main-review img {
+    margin-left: -30px;
+    margin-top: -20px;
+}
+.cust_card_btn_div img {
+    width: 150px;
+    margin: auto !important;
+}
+.cust_card_btn_div {
+    margin-bottom: 0px !important;
+}
+h3.text-left.py-4 {
+    margin-top: 0px !important;
+}
+.card-body p {
+    text-align: center;
+}
+.card {
+    border-radius: 10px;
+}
+.card-body {
+    padding: 15px !important;
+}
+.card-body p {
+    margin-bottom: 8px;
+}
+p.over-all {
+    margin-left: -23px;
+    font-size: 18px;
+    line-height: 170%;
+    font-weight: 400;
+    color: #000 !important;
+    margin-top: 7px;
+}
+button.slick-prev.slick-arrow:after {
+    width: 24px !important;
+    height: auto;
+    font-size: 16px !important;
+    content: '\2190' !important;
+    color: black;
+    left: -35px;
+    top: -3px;
+    background-color: #fff !important;
+    box-shadow: 1px 1px 4px rgb(0 0 0 / 20%) !important;
+    position: absolute !important;
+    margin: 5px;
+    border-radius: 30px !important;
+    padding-left: 12px;
+    padding-right: 28px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+button.slick-next.slick-arrow:after {
+    width: 24px !important;
+    height: auto;
+    font-size: 16px !important;
+    content: '\2192' !important;
+    color: black !important;
+    left: 5px;
+    top: 8px;
+    box-shadow: 1px 1px 4px rgb(0 0 0 / 20%) !important;
+    position: absolute;
+    margin: 5px;
+    background-color: #fff;
+    border-radius: 30px !important;
+    padding-left: 12px;
+    padding-right: 28px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.slick-prev:before, .slick-next:before {
+display: none;
+}
+ul.slick-dots {
+    display: none;
+}
+.cust_card_btn_div img {
+    padding-top: 20px;
+}
+</style>
+<body>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<div class="container main-review">
+   <div class="row">
+    <div class="col-lg-3 fisrt-small-sec">
+    <div class="iner-review-row">
+    <div class="col-lg-4"><span>4.9</span></div>
+    <div class="col-lg-8"><p>Out of <br>5 Stars</p>
+    </div>
+    </div>
+    <p class="iamg-main"><img src="https://global-uploads.webflow.com/6267d9df17f47fb6a5ba20dc/64033da5ab04581add206214_download.png" class="iamg-main"></p>
+    <p class="over-all">Overall rating of 179 reviews</p>
+    </div>
+      <div class="col-lg-9">
+         <div class="items">
+            <div class="card">
+               <div class="cust_card_btn_div">
+                   <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+    <p><strong>Yvonne CLARK</strong></p>
+    <p>January 18, 2023</p>
+    <p>loved the session!</p>
+               </div>
+            </div>
+            <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+    <p><strong>Patricia Rieken</strong></p>
+    <p>May 17, 2022</p>
+    <p>Alla was an awesome host for the Sip & Paint for our hybrid group of in office and virtual folks. They literally felt like they were all in one room. This was our second Ryptic event and I hope to continue using them for future office events.</p>
+               </div>
+            </div>
+            <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Julie Hamilton</strong></p>
+        <p>April 2, 2022</p>
+        <p>We just held our second event with Ryptic - they are great!  Our University club is virtual, so these events help us to stay connected.  We've done the paint night and the Office Olympics and the hosts from Ryptic are amazing!  It's shocking to me how fast an hour and a half go by with Ryptic - we've had so much fun!</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Jeff Mar</strong></p>
+        <p>February 27, 2022</p>
+        <p>Our family immediately the next day went out and bought all the same materials and had a painting day. We've used 15 canvases in the 2 days following the event! Great session.</p>
+               </div>
+            </div>
+               <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b83704379a33f3e14db01_4.png">
+               </div>
+               <div class="card-body">
+                  <p>4 out of 5 stars</p>
+        <p><strong>Kylie Panke</strong></p>
+        <p>February 21, 2022</p>
+        <p>The brush lost half its bristles while painting and cleaning off in the water.</p>
+               </div>
+            </div>
+               <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>carla pantoja</strong></p>
+        <p>February 20, 2022</p>
+        <p>I had a wonderful time painting and our host was wonderful ! however the small brush wasn’t the best and it became a bit difficult to do a lot of the small detail work our painting required.</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b83704379a33f3e14db01_4.png">
+               </div>
+               <div class="card-body">
+                  <p>4 out of 5 stars</p>
+        <p><strong>Sidney Smith</strong></p>
+        <p>February 20, 2022</p>
+        <p>It was fun!</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Gabriela Estrada</strong></p>
+        <p>December 24, 2021</p>
+        <p>Such a fun and a great time!! Sam was amazing - we had some issues with the link at the beginning but once we were in, it was on. I loved all the games, Sam's humour and hosting, and just the atmosphere. Thank you so much!</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Zee Canals</strong></p>
+        <p>December 23, 2021</p>
+        <p>The experience was a lot of fun! Our instructor was great and super patient with us. We had a wonderful experience.</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Wyrick# Breanna</strong></p>
+        <p>December 21, 2021</p>
+        <p>The instructor was awesome and super easy to follow!! She made virtual painting just as relaxing as in person :)</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Alysha Gonzales</strong></p>
+        <p>December 20, 2021</p>
+        <p>I wasn't sure what to expect with this virtual team event but it ended up being so much fun! The host was hilarious and made everything enjoyable. I would 100% recommend doing something like this for any team event.</p>
+               </div>
+            </div>
+                <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b8370beb22ef68ad3afbd_4.5.png">
+               </div>
+               <div class="card-body">
+                  <p>4.5 out of 5 stars</p>
+        <p><strong>Ferguson# Rene</strong></p>
+        <p>December 20, 2021</p>
+        <p>This was my first zoom painting experience and thought it went well.</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Vickie Kahiga</strong></p>
+        <p>December 16, 2021</p>
+        <p>The host Natalie was amazing, very engaging and took time to explain step by step instructions. Great job.</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Nneka Ijeoma</strong></p>
+        <p>December 12, 2021</p>
+        <p>It was great, the entire staff I spoke to were extremely professional</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Donna Scheffki</strong></p>
+        <p>October 25, 2021</p>
+        <p>"Overall the team really enjoyed the experience. Our host, Vic, was great - she played music in the background to give us some ambiance and was really encouraging to everyone. Several folks asked if we could do it again and even if there were options to switch up the mediums a bit like using oil paints, etc. Thanks for a fun event!"</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>David Feng</strong></p>
+        <p>October 25, 2021</p>
+        <p>Paint night was really easy to follow along which made the experience very fun for someone who hasn't painted since elementary school. Was pretty surprised at my own ability and how the host walked through everything and cheered us on. Will definitely be hanging this on my wall! PS: didn't get a paint kit because I'm outside of the USA</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Preston Sego</strong></p>
+        <p>October 25, 2021</p>
+        <p>It was good, I'd be very happy to do another paint night. My only complaint was that I felt the "Detail brush"'s bristles were a bit too long, but that's super minor, and I should have used my own brush for that 🙃</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Christelle A</strong></p>
+        <p>October 9, 2021</p>
+        <p>Great!!!!</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b8370beb22ef68ad3afbd_4.5.png">
+               </div>
+               <div class="card-body">
+                  <p>4.5 out of 5 stars</p>
+        <p><strong>Isabel Hildebrandt</strong></p>
+        <p>September 28, 2021</p>
+        <p>This was my second paint night, really enjoyed myself.</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Toni Bakal</strong></p>
+        <p>September 27, 2021</p>
+        <p>Great! It was fun and uplifting and very relaxing too. My first paint night ever. Great experience.</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Sierra Cherié Smith</strong></p>
+        <p>September 16, 2021</p>
+        <p>My coworkers and I did the "Escape the Mad Hatter" room in Mountain View. This was most of our group's first time doing an escape room, including myself, and I really loved the experience I had. I don't remember our host's name, but he was friendly and kind and provided us the four hints we were allowed to ask for in a way that didn't give away too much. We were thrilled (and surprised!) that we completed everything with about three minutes to spare! Would definitely recommend this escape room to friends.</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Taylor Thiel</strong></p>
+        <p>September 8, 2021</p>
+        <p>Both hosts were fantastic! They kept everyone on track, kept the games moving, and brought great energy! In this virtual setting it was a great team building exercise.</p>
+               </div>
+            </div>
+               <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b8370beb22ef68ad3afbd_4.5.png">
+               </div>
+               <div class="card-body">
+                  <p>4.5 out of 5 stars</p>
+        <p><strong>Kinnari Agarwal</strong></p>
+        <p>September 7, 2021</p>
+        <p>Great experience, would recommend.</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>App Onboard</strong></p>
+        <p>September 7, 2021</p>
+        <p>Everyone had fun, easy to follow, Vic our hose was very nice.</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b8370beb22ef68ad3afbd_4.5.png">
+               </div>
+               <div class="card-body">
+                  <p>4.5 out of 5 stars</p>
+        <p><strong>John Ochung</strong></p>
+        <p>September 7, 2021</p>
+        <p>Worth every minute</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b8370beb22ef68ad3afbd_4.5.png">
+               </div>
+               <div class="card-body">
+                  <p>4.5 out of 5 stars</p>
+        <p><strong>Laura Wilson</strong></p>
+        <p>September 4, 2021</p>
+        <p>Our teacher was great! It’s hard for folks to get a high quality art piece with low quality paint and brushes though. I used my one brushes and sort of wished I used my own paint too.</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Adrian Castro</strong></p>
+        <p>September 3, 2021</p>
+        <p>It was very fun and out host was amazing</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b8370beb22ef68ad3afbd_4.5.png">
+               </div>
+               <div class="card-body">
+                  <p>4.5 out of 5 stars</p>
+        <p><strong>Emily Campana</strong></p>
+        <p>September 3, 2021</p>
+        <p>it was a good experience. Spent a lot of time being taught, demonstrated, not as much time for team building, chit chat, banter as I think we would have liked. Still it was fun and would recommend. I also love my painting!</p>
+               </div>
+            </div>
+            <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Amanda Esquivel</strong></p>
+        <p>September 3, 2021</p>
+        <p>super fun and very accessible for all artistic abilities! thank you for a great time! ((the packaging and shipment of the supplies was also AWESOME!!))</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b83704379a33f3e14db01_4.png">
+               </div>
+               <div class="card-body">
+                  <p>4 out of 5 stars</p>
+        <p><strong>Sean Carter</strong></p>
+        <p>August 16, 2021</p>
+        <p>It was my first time and I enjoyed the experience</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Tawnya Pell</strong></p>
+        <p>August 15, 2021</p>
+        <p>Loved this and Natalie so much! Best event yet.</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Phil Severe</strong></p>
+        <p>August 14, 2021</p>
+        <p>It was a fun team building experience.</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>JT Martinez</strong></p>
+        <p>August 14, 2021</p>
+        <p>Our host was awesome!  Super clear with instruction and very encouraging to everyone.</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Monika Garcia</strong></p>
+        <p>August 9, 2021</p>
+        <p>I loved this experience. It was easy to follow, entertaining and calming.</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Tracy Singh</strong></p>
+        <p>August 8, 2021</p>
+        <p>It was fun. Better than I expected. It’s nice to know with advisement that I am capable of painting anything half good!</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Tracy Singh</strong></p>
+        <p>August 2, 2021</p>
+        <p>Great!</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Kris Ortner</strong></p>
+        <p>July 2, 2021</p>
+        <p>Had a lot of fun. Would have been nice to have more white paint. Also my small brush did not work at all and I ended up having to use an end of pen to complete the small lines - a bit disappointing.</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Monique Mackey</strong></p>
+        <p>July 2, 2021</p>
+        <p>I enjo yed the session thoroughly. However, Zoom posed a little bit of a challenge. The screen kept flipping to various painters and not focused always on the instructor. So I had to toggle back/forth to the photo link of the object we were painting. Suggestion: If possible, place a 5x7" picture of the object being painted in the kit box. This way wealways have the photo guide in view at all times to reference. Overall, it was loads of fun.</p>
+               </div>
+            </div>
+                 <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Priscilla Alvarenga</strong></p>
+        <p>July 2, 2021</p>
+        <p>the experience was great.</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b83704379a33f3e14db01_4.png">
+               </div>
+               <div class="card-body">
+                  <p>4 out of 5 stars</p>
+        <p><strong>Crystal Chilcoat</strong></p>
+        <p>June 28, 2021</p>
+        <p>Paintbrush quality are your weakest link!</p>
+               </div>
+            </div>
+               <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Pennella# Michael</strong></p>
+        <p>June 25, 2021</p>
+        <p>Paints where hard to open, bristles come off the brushes</p>
+               </div>
+            </div>
+               <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Jane Bark</strong></p>
+        <p>June 14, 2021</p>
+        <p>Vic was terrific!</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b83704379a33f3e14db01_4.png">
+               </div>
+               <div class="card-body">
+                  <p>4 out of 5 stars</p>
+        <p><strong>Gary Kimmel</strong></p>
+        <p>June 8, 2021</p>
+        <p>Host was great. Event was much better than I expected it to be. I'd do it again. (Not sure what do do with my painting now :D)</p>
+               </div>
+            </div>
+               <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Frank (he/him)</strong></p>
+        <p>June 6, 2021</p>
+        <p>Natalie was great, super personal and interacted the perfect amount to allow the team to connect with each other!</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Kimberly Taylor</strong></p>
+        <p>May 30, 2021</p>
+        <p>It was a really fun experience! It inspired me to consider taking a painting course and investing in some quality brushes.</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Lusine Simonyan</strong></p>
+        <p>May 30, 2021</p>
+        <p>Great time. Thank you</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Adil (he/him)</strong></p>
+        <p>May 21, 2021</p>
+        <p>"Abby Hibbard made it super easy for us to book the event. I will say that I almost didn't reach out because it was so hard to find out how I could connect with a Booking specialist on the Ryptic website (I went to the website 4x in a week, and reviewed competitor websites because it was so hard to find an email/phone number I could reach out to). Really glad I didn't! It was a blast and the team loved it. We'll be back"</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b8370beb22ef68ad3afbd_4.5.png">
+               </div>
+               <div class="card-body">
+                  <p>4.5 out of 5 stars</p>
+        <p><strong>Paul Lee</strong></p>
+        <p>May 21, 2021</p>
+        <p>The painting activity was relaxing and fun.</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Steph Do</strong></p>
+        <p>May 21, 2021</p>
+        <p>liked the event!</p>
+               </div>
+            </div>
+            <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Sandi Lydeen</strong></p>
+        <p>May 18, 2021</p>
+        <p>Our host was great, she gave instructions every step of the way.  Was able to answer all of our questions with tips on how to mix colors.</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b83704379a33f3e14db01_4.png">
+               </div>
+               <div class="card-body">
+                  <p>4 out of 5 stars</p>
+        <p><strong>Joanne Quan</strong></p>
+        <p>May 17, 2021</p>
+        <p>fun group activity</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Mary Smith</strong></p>
+        <p>May 17, 2021</p>
+        <p>It was such a fun event. The team really enjoyed it and I actually discovered, I have a hidden talent. I would definitely recommend Ryptic to others.</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Sam Arauz</strong></p>
+        <p>May 17, 2021</p>
+        <p>Our guide was very friendly and always in a good mood to help us, it was fun and a good opportunity to have fun with our co-workers.</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Preeti Chavan</strong></p>
+        <p>May 17, 2021</p>
+        <p>It was fun event. thanks</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Patricia Danna</strong></p>
+        <p>May 17, 2021</p>
+        <p>Maybe there could have been a little more guidance as to how much paint to take out of the containers at a time; as I ran out of white.</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Amy Tompkins</strong></p>
+        <p>May 17, 2021</p>
+        <p>I really enjoyed the Paint Night activity.  Perhaps the hostess could have slowed down just a bit, but we got started late, so she may have been trying to play catch up.  Thank you for a fun night.</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b83704379a33f3e14db01_4.png">
+               </div>
+               <div class="card-body">
+                  <p>4 out of 5 stars</p>
+        <p><strong>Lisa Bell</strong></p>
+        <p>May 16, 2021</p>
+        <p>Taylor was great - good pace and very encouraging. The experience was fun. The kit components were good for what they are.</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b8370beb22ef68ad3afbd_4.5.png">
+               </div>
+               <div class="card-body">
+                  <p>4.5 out of 5 stars</p>
+        <p><strong>Susan VanMeter</strong></p>
+        <p>May 16, 2021</p>
+        <p>brushes included in kit shed bristles (a lot).</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Pamela Hunter</strong></p>
+        <p>May 16, 2021</p>
+        <p>It was fun.  One of my paint pots was dry and almost a solid clump</p>
+               </div>
+            </div>
+               <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Jane Bark</strong></p>
+        <p>May 15, 2021</p>
+        <p>The art instructor was terrific. She provided instructions clearly and giving us all enough time. The art kit arrived beautifully packet and instruction cad was high quality.</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Alma Gloria</strong></p>
+        <p>May 15, 2021</p>
+        <p>My daughters and I had a great time, but the quality of the brushes and paint are pretty low.</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b83704379a33f3e14db01_4.png">
+               </div>
+               <div class="card-body">
+                  <p>4 out of 5 stars</p>
+        <p><strong>Isabel Hildebrandt</strong></p>
+        <p>May 15, 2021</p>
+        <p>No comments</p>
+               </div>
+            </div>
+               <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Lisa MSN</strong></p>
+        <p>May 15, 2021</p>
+        <p>The event was fun, the instructor was good. The paint kit was nice with the exception of the paint and brush quality. The paint was clumpy and a little dried out and the small brush was like a mop not allowing for the definition that was needed for item being painted.</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Sarah Fry</strong></p>
+        <p>May 15, 2021</p>
+        <p>paintbrushes weren't appropriate for the painting (too long). some paint had dried up. Loved the box, made it feel like a special evening with friends.</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Yuen Tse</strong></p>
+        <p>May 15, 2021</p>
+        <p>It’s great. But the brushes are of poor quality. The hair kept coming off the brush when I painted.</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b83704379a33f3e14db01_4.png">
+               </div>
+               <div class="card-body">
+                  <p>4 out of 5 stars</p>
+        <p><strong>Jennifer Post</strong></p>
+        <p>May 14, 2021</p>
+        <p>nicely packaged paint kit.  Was a fun idea to keep us creative.</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Tanya Crayton</strong></p>
+        <p>May 14, 2021</p>
+        <p>Natalie was great. She was very patient and explained the process well. I was nervous when I received a blank canvas, I usually get predawn so I can paint within the lines, but I was so proud of myself at the final result. Thank You Natalie!</p>
+               </div>
+            </div>
+               <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Ashleigh (she/her)</strong></p>
+        <p>May 13, 2021</p>
+        <p>The package it came in was gorgeous! I honestly didn't realize what it was at first. The painting class was fun, as always with these classes felt a little rushed but a great experience, especially virtual. Would highly recommend it!</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Elizabeth Potter</strong></p>
+        <p>May 13, 2021</p>
+        <p>overall it was great. some of the team stated that their paint was a little dry and i think the brush sizes should be considered a bit more, but nothing that would keep me from doing it again.</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b8370beb22ef68ad3afbd_4.5.png">
+               </div>
+               <div class="card-body">
+                  <p>4.5 out of 5 stars</p>
+        <p><strong>Kevin Impelman</strong></p>
+        <p>May 13, 2021</p>
+        <p>Natalie was helpful.</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b83704379a33f3e14db01_4.png">
+               </div>
+               <div class="card-body">
+                  <p>4 out of 5 stars</p>
+        <p><strong>Alade-Lambo# Tola</strong></p>
+        <p>May 10, 2021</p>
+        <p>this is the second time we've used Ryptic as a team. the first time was for a virtual escape room and we all had an amazing time with it. this time, it was for the paint session and we didn't quite enjoy it as much. The packaging was nice. the facilitator (Alla) felt impersonal and rushed- which is what mostly made the experience not as pleasant .</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Natalie Nabati</strong></p>
+        <p>May 7, 2021</p>
+        <p>It was great! The instructor was patient and made us all feel like experts! :)</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Lopez# Carla</strong></p>
+        <p>May 3, 2021</p>
+        <p>Nicole was our host for the night, I loved her cheerful attitude and encouraging energy. The virtual paint team building was a first for me and was a lot of fun. I understand the materials are not expected to be overly high quality, but I think the brushes could be upgraded a little. Overall I enjoyed my experience and would definitely recommend to other colleagues.</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Helen Holzmeister</strong></p>
+        <p>May 3, 2021</p>
+        <p>I thought the experience was great. The supplies came in a very beautiful package, and the host was very patient with the group.</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b8370beb22ef68ad3afbd_4.5.png">
+               </div>
+               <div class="card-body">
+                  <p>4.5 out of 5 stars</p>
+        <p><strong>Antonio deOliveira</strong></p>
+        <p>May 3, 2021</p>
+        <p>Great time. More feedback included in the Google form.</p>
+               </div>
+            </div>
+               <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Paulette Schirmer</strong></p>
+        <p>May 1, 2021</p>
+        <p>This was the first time that I had done something like this. Vic was amazing at working with various abilities, attention spans, and with positive encouragement!</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Liz Thomas</strong></p>
+        <p>April 30, 2021</p>
+        <p>Esteben was an amazing host! Our team had a great time, and crushed the competition- as usual! TEAM COLD BREW!!</p>
+               </div>
+            </div>
+               <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Sarah Dombroski</strong></p>
+        <p>April 30, 2021</p>
+        <p>Had a great time!</p>
+               </div>
+            </div>
+               <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Christopher Noguera</strong></p>
+        <p>April 30, 2021</p>
+        <p>It was fantastic and something new that I've never done before. I thoroughly enjoyed it and will probably be returning to do a different experience.</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b83704379a33f3e14db01_4.png">
+               </div>
+               <div class="card-body">
+                  <p>4 out of 5 stars</p>
+        <p><strong>Mayra Salinas</strong></p>
+        <p>April 26, 2021</p>
+        <p>I felt a bit rushed to do my painting since there was many steps to tackle. Perhaps, offer sessions with options to select of a 1-3 hours time slots. I felt the instructor did her part to offer help and provided suggestion to complete the painting. The paint quality could be stepped up a level. I would suggest offering plastic squeezable tubed paint since it would be an easier application on the palette panel. Also provide a variety of paint brush size. I suggest for the company to pick better quality of brushes. The paint brush bristles were falling off on my canvas, constantly, when painting.</p>
+               </div>
+            </div>
+                <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Mark Jacques</strong></p>
+        <p>April 26, 2021</p>
+        <p>"Our host was amazing and friendly. She did her best to keep the pace realistic and was very encouraging to those of use who were less talented. 
+Would definitely recommend a friend's company to do the same."</p>
+               </div>
+            </div>
+                 <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Dianna Bravo</strong></p>
+        <p>April 26, 2021</p>
+        <p>Everything was great except you need to provide better brushes.</p>
+               </div>
+            </div>
+                <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Carolina Albano</strong></p>
+        <p>April 26, 2021</p>
+        <p>"IT was a relaxing, emnjjoyable time. The host was friendly, kind and very talentted."</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b8370beb22ef68ad3afbd_4.5.png">
+               </div>
+               <div class="card-body">
+                  <p>4.5 out of 5 stars</p>
+        <p><strong>Kat Eckart</strong></p>
+        <p>April 26, 2021</p>
+        <p>My team had a blast. The kits arrived on time and get packaged very nicely. The painting was not too hard and the instructor was very imformative.</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b83704379a33f3e14db01_4.png">
+               </div>
+               <div class="card-body">
+                  <p>4 out of 5 stars</p>
+        <p><strong>Jimmy Rao</strong></p>
+        <p>April 24, 2021</p>
+        <p>The experience was fun and the painting turned out well! The pace was good for beginners as well and I enjoyed myself!</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Rhema Remmel</strong></p>
+        <p>April 24, 2021</p>
+        <p>I have already filled out this survey.</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Lexi Bainnson</strong></p>
+        <p>April 23, 2021</p>
+        <p>i forget her name but our instructor was wonderful! very sweet, very calming and kind:)</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Ashlee Anne Ammons</strong></p>
+        <p>April 19, 2021</p>
+        <p>This is such a fun and well executed way to connect with your remote teammates in new ways.  It is low stress and inclusive to everyone.  Loved our experience, the hosts really make it top notch!</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Harrison Stone</strong></p>
+        <p>April 16, 2021</p>
+        <p>Super fun silly experience. A great way to have a good time with colleagues in a world where we infrequently if ever get to hang in person. Would def recommend.</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Ryan Phillips</strong></p>
+        <p>April 16, 2021</p>
+        <p>Highly recommend Ryptic for any virtual team building event. Their Office Olympics are great for any high energy or competitive team!</p>
+               </div>
+            </div>
+               <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Kate Amaral</strong></p>
+        <p>April 9, 2021</p>
+        <p>Loved it! It was great!  My small brush was too "hairy" to be able to do the fine line painting though.</p>
+               </div>
+            </div>
+               <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Vaibhav Gupta</strong></p>
+        <p>April 3, 2021</p>
+        <p>Great collection of games and very energetic hosts. Highly recommend!</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Andrew Chong</strong></p>
+        <p>April 1, 2021</p>
+        <p>"Definitely recommend the Ryptic Team Building Event! Had a blast with one of their events through a Trivia event via Zoom, and I must say this is one of the #funnest zoom events we had! Adam (Event host) is super friendly and has the best/wittiest comments! #TrulyAmazing #ZoomEvent #HighlyRecommend #FiveStars (Not sure if there are any other hosts, but definitely recommend Adam!)"</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Hiroki Hayama</strong></p>
+        <p>April 1, 2021</p>
+        <p>Vic our host was great! Our group was a bit quiet given we had a bunch of different folks from different teams but she did a great job to keep the group engaged.</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Jennelle Crothers</strong></p>
+        <p>April 1, 2021</p>
+        <p>Our paint supplies were provided by our company, so you weren't at fault for the challenges there.  The host was great!</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b8370beb22ef68ad3afbd_4.5.png">
+               </div>
+               <div class="card-body">
+                  <p>4.5 out of 5 stars</p>
+        <p><strong>Alan Eng</strong></p>
+        <p>April 1, 2021</p>
+        <p>Vic did a great job. Our group definitely wasn't the most talkative but I appreciate Vic's willingness to work with us. Regarding my paint kit, I noticed I was running quickly out of the paint that I needed since the mini jars were only half full.</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Admin</strong></p>
+        <p>March 30, 2021</p>
+        <p>Setting it up was so easy!  Recommend this for team-building activities.</p>
+               </div>
+            </div>
+              <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b83704379a33f3e14db01_4.png">
+               </div>
+               <div class="card-body">
+                  <p>4 out of 5 stars</p>
+        <p><strong>Penny Carter</strong></p>
+        <p>March 13, 2021</p>
+        <p>Great experience.  Unaware of costs paid by host, but I feel that I will remember my work.</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Brianna Coston</strong></p>
+        <p>March 13, 2021</p>
+        <p>The only downside for me was the small brush was still too wide for tree work. Otherwise I loved the event!</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b8370beb22ef68ad3afbd_4.5.png">
+               </div>
+               <div class="card-body">
+                  <p>4.5 out of 5 stars</p>
+        <p><strong>Odom Wu</strong></p>
+        <p>March 12, 2021</p>
+        <p>The host was patient in helping the team out while on Zoom.</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Ryan Grodzki</strong></p>
+        <p>March 12, 2021</p>
+        <p>Was very fun!!! Helpful and friendly host</p>
+               </div>
+            </div>
+             <div class="card">
+                <div class="cust_card_btn_div">
+                 <img src="https://uploads-ssl.webflow.com/6267d9df17f47fb6a5ba20dc/640b837017d12b5625722e20_5%20star.png">
+               </div>
+               <div class="card-body">
+                  <p>5 out of 5 stars</p>
+        <p><strong>Lauren Maynard</strong></p>
+        <p>March 2, 2021</p>
+        <p>"Victoria was an awesome instructor, especially with how big of a group we had and it was all over Zoom. Really liked the kits although some of the water-based acrylic paints were thick. Super fun and would use in the future!"</p>
+               </div>
+            </div>
+
+
+         </div>
+      </div>
+   </div>
+</div>
+</body>
+</html>
